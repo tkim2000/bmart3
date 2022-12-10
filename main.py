@@ -15,7 +15,9 @@ import update
 
 #from python_mysql_dbconfig import read_db_config
 from PIL import Image
-
+import requests
+ip = requests.get('https://checkip.amazonaws.com').text.strip()
+print(ip)
 # Search Function - Display new page from here 
 # Changed Nav Bar Page 
 
